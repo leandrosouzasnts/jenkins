@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/09/26 23:44:11.000.296,=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/14 21:06:52.371,=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/14 21:07:41.739,C:\workspaces\ws-delphi\jenkins\ViewPrincipal.pas=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/14 21:07:41.739,C:\workspaces\ws-delphi\jenkins\ViewPrincipal.dfm=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/03/14 21:07:52.052,C:\workspaces\ws-delphi\jenkins\TesteJenkins.pas=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/03/14 21:09:42.262,=C:\workspaces\ws-delphi\jenkins\Unit1.pas</Transaction>
+    <Transaction>2022/03/14 21:09:49.817,C:\workspaces\ws-delphi\jenkins\Calculadora.pas=C:\workspaces\ws-delphi\jenkins\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
