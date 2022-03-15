@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2250A0CF-1259-4CE2-9BB0-9295DD3A6F23}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="TesteJenkins.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MyTeste.pas">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TesteJenkins">
+        <MSBuild Projects="TesteJenkins.dproj"/>
+    </Target>
+    <Target Name="TesteJenkins:Clean">
+        <MSBuild Projects="TesteJenkins.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TesteJenkins:Make">
+        <MSBuild Projects="TesteJenkins.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MyTeste">
+        <MSBuild Projects="MyTeste.pas"/>
+    </Target>
+    <Target Name="MyTeste:Clean">
+        <MSBuild Projects="MyTeste.pas" Targets="Clean"/>
+    </Target>
+    <Target Name="MyTeste:Make">
+        <MSBuild Projects="MyTeste.pas" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TesteJenkins;MyTeste"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TesteJenkins:Clean;MyTeste:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TesteJenkins:Make;MyTeste:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
